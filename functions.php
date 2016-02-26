@@ -116,9 +116,26 @@ add_action( 'widgets_init', 'sanctuary2016_widgets_init' );
 function sanctuary2016_scripts() {
 	wp_enqueue_style( 'sanctuary2016-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'sanctuary2016-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+/**
+ * Enqueues our locally supplied font awesome stylesheet
+ */
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
-	wp_enqueue_script( 'sanctuary2016-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+/** 
+ * Google Fonts
+*/
+function google_fonts() {
+	$query_args = array(
+		'family' => 'Open+Sans:400,700|Arvo:400,700|Open Sans Condensed:300,700',
+		'subset' => 'latin,latin-ext',
+	);
+	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+            }
+            
+add_action('wp_enqueue_scripts', 'google_fonts');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
