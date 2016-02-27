@@ -16,12 +16,26 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 				
-			<h1>Hello There</h1>
+			<h1><?php the_field('image_caption_1'); ?></h1>
+				
+				<?php 
+
+				$image = get_field('image_1');
+
+				if( !empty($image) ): ?>
+
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+				<?php endif; ?>
+
+			<h1><?php the_field('image_caption_2'); ?></h1>
+			<h1><?php the_field('image_caption_3'); ?></h1>
+			<h1><?php the_field('image_caption_4'); ?></h1>
+			<h1><?php the_field('image_caption_5'); ?></h1>
 			
 		</div><!-- #content -->
 	</div><!-- #primary -->
 </div><!-- #main-content -->
 
 <?php
-get_sidebar();
 get_footer();
