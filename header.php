@@ -32,7 +32,7 @@
 			</nav>
 	</header>
 
-<li> <a href="#">Studio Cabins</a>
+<!--<li> <a href="#">Studio Cabins</a>
 	<ul>
 		<li><a href="#">Hillside Painter's Cabin</a></li>
 		<li><a href="#">Orchard Painter's Cabin</a></li>

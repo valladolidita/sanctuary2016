@@ -675,6 +675,63 @@ a:active {
 	text-align: right;
 	width: 50%;
 }
+/* sub menu. */
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: #f9f9f9;
+}
+
+.sub-menu  ul {
+  list-style: none;
+  margin: 0;
+  padding: .3em;
+  text-decoration: none;
+}
+
+.sub-menu  li {
+  float: left;
+  margin-right: 5px;
+  border-bottom: 1px solid #808080;
+}
+
+.sub-menu  li a {
+  display: block;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  padding: .5em;
+  color: black;
+
+}
+
+.sub-menu  li a:hover {
+  background-color: #C5DA7F;
+  color: ##00a060;
+  text-decoration: none;
+}
+
+.sub-menu  li ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+}
+
+.sub-menu  li:hover ul {
+  display: block; 
+}
+
+.sub-menu  li li {
+  float: none;
+  border-bottom: 1px solid #C5DA7F; 
+}
+
+.sub-menu  li li a {
+  border: 0;
+  border-left: 1px solid #C5DA7F;
+  border-right: 1px solid #C5DA7F;
+} 
 
 /*--------------------------------------------------------------
 # Accessibility
