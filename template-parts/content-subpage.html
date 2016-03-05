@@ -6,13 +6,30 @@ get_header(); ?>
 	
 	<?php 
 
-		the_field( 'image_gallery');
+	$images = get_field('image_gallery');
+
+		if( $images ): ?>
+		    <ul>
+		        <?php foreach( $images as $image ): ?>
+		            <li>
+		                <a href="<?php echo $image['url']; ?>">
+		                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+		                </a>
+		                <p><?php echo $image['caption']; ?></p>
+		            </li>
+		        <?php endforeach; ?>
+		    </ul>
+		<?php endif; ?>
+
+	<?php
+
 		the_field( 'title' );
 		the_field( 'page_description' );
 		the_field( 'art_features_list' );
 		the_field( 'cabin_features_list' );
 		the_field( 'pricing_info' );
-		the_field( 'link_button');  /*<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a> */
+		the_field( 'link_button');  
+		/*<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a> */
 
 	?>
 	
