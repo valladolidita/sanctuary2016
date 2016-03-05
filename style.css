@@ -702,17 +702,17 @@ a:active {
   background-color: #f9f9f9;
   border: 1px solid #f9f9f9;
   padding: .5em;
+  text-align: center;
   color: black;
-
 }
 
-.sub-menu  li a:hover {
-  background-color: #C5DA7F;
-  color: ##00a060;
+.sub-menu li a:hover {
+  background-color: black;
+  color: white;
   text-decoration: none;
 }
 
-.sub-menu  li ul {
+.sub-menu li ul {
   display: none;
   position: absolute;
   padding: 0;
