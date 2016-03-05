@@ -1,0 +1,22 @@
+<?php
+/**
+ * Template Name: content-subpage
+ */
+get_header(); ?>
+	
+	<?php 
+
+		the_field( 'image_gallery');
+		the_field( 'title' );
+		the_field( 'page_description' );
+		the_field( 'art_features_list' );
+		the_field( 'cabin_features_list' );
+		the_field( 'pricing_info' );
+		the_field( 'link_button');  /*<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a> */
+
+	?>
+	
+	<div class="image-content"	style="background-image: url('<?php the_field('background_image'); ?>');"></div>
+
+<?php
+get_footer();
