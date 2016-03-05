@@ -31,3 +31,17 @@
 				</ul>
 			</nav>
 	</header>
+
+<li> <a href="#">Studio Cabins</a>
+	<ul>
+		<li><a href="#">Hillside Painter's Cabin</a></li>
+		<li><a href="#">Orchard Painter's Cabin</a></li>
+		<li><a href="#">Prarie Ceramics Cabin</a></li>
+		<li><a href="#">Woodland Ceramics Cabin</a></li>
+		<li><a href="#">Woodworkers Cabin</a></li>
+		<li><a href="#">Woodland Writers Cabin</a></li>
+		<li><a href="#">Hillside Writers Cabin</a></li>
+		<li><a href="#">Musicians Cabins</a></li>
+		<li><a href="#">Valley Drawing Cabin</a></li>
+	</ul>
+</li>
