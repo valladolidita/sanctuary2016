@@ -17,6 +17,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
 
 <?php wp_head(); ?>
 </head>
@@ -31,17 +35,3 @@
 				</ul>
 			</nav>
 	</header>
-
-<!--<li> <a href="#">Studio Cabins</a>
-	<ul>
-		<li><a href="#">Hillside Painter's Cabin</a></li>
-		<li><a href="#">Orchard Painter's Cabin</a></li>
-		<li><a href="#">Prarie Ceramics Cabin</a></li>
-		<li><a href="#">Woodland Ceramics Cabin</a></li>
-		<li><a href="#">Woodworkers Cabin</a></li>
-		<li><a href="#">Woodland Writers Cabin</a></li>
-		<li><a href="#">Hillside Writers Cabin</a></li>
-		<li><a href="#">Musicians Cabins</a></li>
-		<li><a href="#">Valley Drawing Cabin</a></li>
-	</ul>
-</li>
