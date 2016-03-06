@@ -14,7 +14,7 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_1');?>
 
-		<div id="image-content1"	style="background-image: url('<?php the_field('image_1'); ?>');">
+		<div id="image-content1" style="background-image: url('<?php the_field('image_1'); ?>');">
 	</div>
 	</div>	
 	</div>

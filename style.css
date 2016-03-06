@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Header Nav
 	## Background Image
 	## Posts and pages
+		### Subpage
 	## Asides
 	## Comments
 	## Footer
@@ -898,7 +899,7 @@ header h2 {
 
 }
 /*--------------------------------------------------------------
-## Homepage Background Image
+## Homepage and Sub-page Background Images
 --------------------------------------------------------------*/
 #image-content1 {
 	position: absolute;
@@ -945,6 +946,16 @@ header h2 {
 	top: 3273px;
 	right: 0;
 	height: 724px;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#image-content6 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 864px;
 	width: 100%;
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -1101,6 +1112,87 @@ header h2 {
 }
 
 /*--------------------------------------------------------------
+### subpage
+--------------------------------------------------------------*/
+#subpage1 {
+	background-color: white;
+	height: 570px;
+	margin-top: 95px;
+	padding: 30px;
+}
+
+#image-gallery {
+	float:left;
+	width: 60%;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+#image-gallery ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+#subpage1 #content-area {
+	float:left;
+	width: 33%;
+	padding-left: 1em;
+}
+
+#subpage1 h1{
+	font-size: 1.05em;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+#subpage1 p {
+	font-family: 'open sans';
+	font-weight: 400;
+	font-size: .85em;
+	line-height: 1.25em;
+}
+
+#subpagelistart, #subpagelistcabin, #subpagelistprice {
+	list-style-type: none;
+	font-family: 'open sans';
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#subpagelistart h2, #subpagelistcabin h2 {
+	font-size: .85em;
+	line-height: 1.25em;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+#subpagelistprice h2 {
+	font-size: .85em;
+	line-height: 1.25em;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+#subpagelistart li, #subpagelistcabin li, #subpagelistprice li {
+	font-size: .85em;
+	line-height: 1.25em;
+	}
+
+.subpagebutton {
+	background-color: green;
+	line-height: 1em;
+	padding: .50em 1em;
+	font-family: 'open sans';
+	font-weight: 400;
+	font-size: .85em;
+}
+
+
+/*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
@@ -1224,12 +1316,12 @@ object {
 	margin-bottom: 1.5em;
 }
 
-.gallery-item {
+/*.gallery-item {
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
-}
+}*/
 
 .gallery-columns-2 .gallery-item {
 	max-width: 50%;
