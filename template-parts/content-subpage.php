@@ -5,7 +5,7 @@
 get_header(); ?>
 	
 
-	<div id="subpage1" class="content-area">
+	<div id="subpage1">
 	
 		<div id="image-gallery">
 
@@ -14,17 +14,28 @@ get_header(); ?>
 			$images = get_field('image_gallery');
 
 				if( $images ): ?>
-				    <ul>
+				   
+				    <ul id="selected-image">
 				        <?php foreach( $images as $image ): ?>
-
+				            <li>
+				                <a href="<?php echo $image['url']; ?>">
+				                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+				                </a>
+				            </li>
+				        <?php endforeach; ?>
+				    </ul>
+				    
+				    <ul id="thumbnail-gallery">
+				    <?php foreach( $images as $image ): ?>
 				            <li>
 				                <a href="<?php echo $image['url']; ?>">
 				                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 				                </a>
-				                <p><?php echo $image['caption']; ?></p>
 				            </li>
 				        <?php endforeach; ?>
 				    </ul>
+				
+
 				<?php endif; ?>
 		</div>
 	
@@ -74,5 +85,18 @@ endif;
 	<div id="image-content6" style="background-image: url('<?php the_field('background_image'); ?>');"></div>
 </div>
 
+	<footer id="colophon-subpage" class="site-footer" role="contentinfo">
+	<nav>
+		<ul>
+			<li><a href="#"><i class="fa fa-tumblr fa-3x"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest fa-3x"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+			<li>&copy; copyright Sanctuary Eco-Retreat</li>
+		</ul>
+	</nav>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
 <?php
-get_footer();
+//get_footer();
