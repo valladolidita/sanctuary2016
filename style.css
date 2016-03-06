@@ -37,7 +37,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 	## Header
 	## Header Nav
-	## Slideshow
+	## Background Image
 	## Posts and pages
 	## Asides
 	## Comments
@@ -677,20 +677,22 @@ a:active {
 }
 /* sub menu. */
 .sub-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
+  position: fixed;
+  top: 150px;
+  left: 320px;
+  width: 225px;
   background: #f9f9f9;
+  font-size: 1em;
+  font-weight: 400;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .sub-menu  ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 .sub-menu  li {
@@ -698,6 +700,7 @@ a:active {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #808080;
+  width: 225px;
 }
 
 .sub-menu  li a {
@@ -705,7 +708,6 @@ a:active {
   background-color: #f9f9f9;
   border: 1px solid #f9f9f9;
   padding: 0;
-  text-align: center;
   color: black;
 }
 
@@ -844,20 +846,19 @@ a:active {
 ## Header
 --------------------------------------------------------------*/
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: black;
-	opacity: 0.75;
+	background-color: rgba(0,0,0,0.7);
 	height: 4.25em;
-	margin: 5em 0;
+	margin: 5.12em 0;
 	z-index: 2;
 	width: 100%;
 }
 
 header h1 {
 	font-family:'Arvo';
-	font-size: 4em;
+	font-size: 3.85em;
 	font-weight: 700;
 	color: white;
 	margin: 0;
@@ -866,29 +867,26 @@ header h1 {
 }
 
 header h2 {
-	font-family:'Open+Sans';
-	font-weight: 400;
-	font-size: 1em;
+	font-family:'Open Sans Condensed';
+	font-weight: 300;
+	font-size: 1.35em;
 	line-height: 1.25em;
 	text-transform: uppercase;
 	color: white;
-	margin: -1em;
-	margin-left: 2em;
+	margin: -1.15em;
+	margin-left:  1.55em;
 }
 
 /*--------------------------------------------------------------
-## Header Nav
+## Header Nav (primary-menu)
 --------------------------------------------------------------*/
-
 #primary-menu {
-	position: absolute;
+	position: fixed;
 	list-style-type: none;
-	top: 0;
-	right: 0;
-	float: right;
+	top: 82px;
+	left: 295px;
 	margin-top: 2em;
 	font-size: .75em;
-
 }
 
 #primary-menu li{
@@ -900,13 +898,175 @@ header h2 {
 
 }
 /*--------------------------------------------------------------
-## Image
+## Homepage Background Image
 --------------------------------------------------------------*/
-.image-content {
-	height: 500px;
+#image-content1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 850px;
 	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 
+#image-content2 {
+	position: absolute;
+	top: 850px;
+	right: 0;
+	height: 850px;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#image-content3 {
+	position: absolute;
+	top: 1699px;
+	right: 0;
+	height: 850px;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#image-content4 {
+	position: absolute;
+	top: 2549px;
+	right: 0;
+	height: 850px;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#image-content5 {
+	position: absolute;
+	top: 3273px;
+	right: 0;
+	height: 724px;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+/*--------------------------------------------------------------
+## Homepage Background Image Text
+--------------------------------------------------------------*/
+#content1 h1 {
+	position: absolute;
+	top: 500px;
+	left: 620px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'arvo';
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+#content1 h2 {
+	position: absolute;
+	top: 501px;
+	left: 685px;
+	color: white;
+	font-family: 'open sans condensed';
+	font-weight: 300;
+	font-size: 2.55em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+#content2 h1 {
+	position: absolute;
+	top: 1300px;
+	left: 200px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'arvo';
+	font-weight: 700;
+	font-size: 1.75em;
+}
+
+#content2 h2 {
+	position: absolute;
+	top: 1305px;
+	left: 170px;
+	color: white;
+	font-family: 'open sans condensed';
+	font-weight: 300;
+	font-size: 2.55em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+#content3 h1 {
+	position: absolute;
+	top: 2320px;
+	left: 400px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'arvo';
+	font-weight: 700;
+	font-size: 1.75em;
+}
+
+#content3 h2 {
+	position: absolute;
+	top: 2325px;
+	left: 450px;
+	color: black;
+	font-family: 'open sans condensed';
+	font-weight: 300;
+	font-size: 2.55em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+#content4 h1 {
+	position: absolute;
+	top: 3045px;
+	left: 625px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'arvo';
+	font-weight: 700;
+	font-size: 1.55em;
+}
+
+#content4 h2 {
+	position: absolute;
+	top: 3045px;
+	left: 269px;
+	color: white;
+	font-family: 'open sans condensed';
+	font-weight: 300;
+	font-size: 2.55em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+#content5 h1 {
+	position: absolute;
+	top: 3680px;
+	left: 50px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'arvo';
+	font-weight: 700;
+	font-size: 1.55em;
+}
+
+#content5 h2 {
+	position: absolute;
+	top: 3680px;
+	left: 40px;
+	color: white;
+	font-family: 'open sans condensed';
+	font-weight: 300;
+	font-size: 2.55em;
+	line-height: 1.15em;
+	text-transform: lowercase;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -966,30 +1126,39 @@ header h2 {
 #colophon.site-footer {
 	position: absolute;
 	list-style-type: none;
-	bottom: 0;
+	top: 3914px;
 	left: 0;
-	background-color: black;
-	opacity: 0.75;
+	background-color: rgba(0,0,0,0.7);
 	margin-top: 2em;
 	font-size: .75em;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	z-index: 2;
 	width: 100%;
 	height: 5em;
 	padding: 1em 0;
+	font-family: 'open sans';
+}
+
+#colophon.site-footer ul{
+	padding-left: 0;
+}
+
+#colophon.site-footer li:nth-child(4){
+	padding-right: 27em;
 }
 
 #colophon.site-footer li{
 	color: white;
 	opacity: 0.75;
-	text-transform: uppercase;
 	text-decoration: none;
 	display: inline;
 	padding: .75em;
 }
 
 #colophon.site-footer li:nth-child(4){
-	padding-right: 27em;
+	padding-right: 39em;
+	color: white;
+
 }
 
 

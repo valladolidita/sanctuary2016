@@ -14,9 +14,9 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_1');?>
 
-		<div class="image-content"	style="background-image: url('<?php the_field('image_1'); ?>');">
+		<div id="image-content1"	style="background-image: url('<?php the_field('image_1'); ?>');">
 	</div>
-		</div>	
+	</div>	
 	</div>
 
 	<div id="primary2" class="content-area">
@@ -27,9 +27,9 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_2');?>
 
-		<div class="image-content"	style="background-image: url('<?php the_field('image_2'); ?>');">
+		<div id="image-content2" style="background-image: url('<?php the_field('image_2'); ?>');">
 	</div>
-		</div>	
+	</div>	
 	</div>
 
 	<div id="primary3" class="content-area">
@@ -40,9 +40,9 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_3');?>
 
-		<div class="image-content"	style="background-image: url('<?php the_field('image_3'); ?>');">
+		<div id="image-content3" style="background-image: url('<?php the_field('image_3'); ?>');">
 	</div>
-		</div>	
+	</div>	
 	</div>
 
 	<div id="primary4" class="content-area">
@@ -53,9 +53,9 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_4');?>
 
-		<div class="image-content"	style="background-image: url('<?php the_field('image_4'); ?>');">
+		<div id="image-content4" style="background-image: url('<?php the_field('image_4'); ?>');">
 	</div>
-		</div>	
+	</div>	
 	</div>
 
 	<div id="primary5" class="content-area">
@@ -66,7 +66,7 @@ get_header(); ?>
 				
 				<?php $image = get_field('image_5');?>
 
-		<div class="image-content"	style="background-image: url('<?php the_field('image_5'); ?>');">
+		<div id="image-content5" style="background-image: url('<?php the_field('image_5'); ?>');">
 	</div>
 	</div>	
 	</div>
