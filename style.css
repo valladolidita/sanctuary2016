@@ -1166,30 +1166,30 @@ header h2 {
 --------------------------------------------------------------*/
 #subpage1 {
 	background-color: white;
-	height: 570px;
+	height: 620px;
 	margin-top: 118px;
 	padding: 30px;
 }
 #image-gallery {
 	float:left;
 	width: 60%;
-    border-width: 5px;
     margin: 0;
     padding: 0;
     position: relative;
 }
 #image-gallery ul{
 	list-style-type: none;
+	float: right;
 	margin: 0;
     padding: 0;
 }
 #thumbnail-gallery {
-  position: absolute;
-
+/*  position: absolute;*/
+float:right;
   bottom: 0;
   right: 0;
   height: 20%;
-  margin-bottom: 10px;
+  padding-right: 2%;
 }
 
 #thumbnail-gallery li {
