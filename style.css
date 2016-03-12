@@ -1170,7 +1170,6 @@ header h2 {
 	margin-top: 118px;
 	padding: 30px;
 }
-
 #image-gallery {
 	float:left;
 	width: 60%;
@@ -1179,22 +1178,25 @@ header h2 {
     padding: 0;
     position: relative;
 }
-
 #image-gallery ul{
 	list-style-type: none;
 	margin: 0;
     padding: 0;
 }
-
 #thumbnail-gallery {
   position: absolute;
+
   bottom: 0;
   right: 0;
   height: 20%;
   margin-bottom: 10px;
 }
+
+#thumbnail-gallery li {
+	display: inline-block;
+}
+
 #thumbnail-gallery a {
-  display: inline-block;
   height: 100%;
   margin-left: 15px;
 }
