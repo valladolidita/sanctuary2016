@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<nav>
+	<div>
 		<ul>
 			<li><a href="#"><i class="fa fa-tumblr fa-3x"></i></a></li>
 			<li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
@@ -22,7 +22,7 @@
 			<li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
 			<li>&copy; copyright Sanctuary Eco-Retreat</li>
 		</ul>
-	</nav>
+	</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
