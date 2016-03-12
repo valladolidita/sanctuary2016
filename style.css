@@ -544,7 +544,7 @@ textarea {
    ========================================================================== */
    
 nav {
-	background:#FFF;float:left;
+	 float:left;
 }
 nav ul {
 	text-align:center;
@@ -554,12 +554,12 @@ nav ul li {
 	display:inline;
 }
 nav ul li:hover {
-	background:#E6E6E6;
+/*	background:#E6E6E6;*/
 }
 nav ul li a {
 	display:block;
-	padding:15px 25px;
-	color:#444;
+/*	padding:15px 25px;*/
+/*	color:#444;*/
 }
 nav ul li ul {
 	position:absolute;
@@ -577,7 +577,7 @@ nav ul li ul li a {
 	color:#444;
 }
 nav ul li ul li:hover a {
-	background:#F7F7F7;
+/*	background:#F7F7F7;*/
 }
 nav ul li ul.fallback {
 	display:none;
