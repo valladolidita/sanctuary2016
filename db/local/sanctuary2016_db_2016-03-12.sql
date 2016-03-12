@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: sanctuary2016_db
-# Generation Time: 2016-03-12 15:06:32 +0000
+# Generation Time: 2016-03-12 18:50:39 +0000
 # ************************************************************
 
 
@@ -2364,7 +2364,7 @@ VALUES
 	(11,1,'wp_user_level','10'),
 	(12,1,'dismissed_wp_pointers',''),
 	(13,1,'show_welcome_panel','1'),
-	(14,1,'session_tokens','a:1:{s:64:\"3d69a437bdf87f972ab04a7507b363ffbeb60b7c477b5197669e0ae42babbe2a\";a:4:{s:10:\"expiration\";i:1457966655;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:118:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2673.0 Safari/537.36\";s:5:\"login\";i:1457793855;}}'),
+	(14,1,'session_tokens','a:2:{s:64:\"3d69a437bdf87f972ab04a7507b363ffbeb60b7c477b5197669e0ae42babbe2a\";a:4:{s:10:\"expiration\";i:1457966655;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:118:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2673.0 Safari/537.36\";s:5:\"login\";i:1457793855;}s:64:\"d13da72e9c83b00827ceed9b136e18958928140ae4a47c02f4290814c188eefc\";a:4:{s:10:\"expiration\";i:1457979631;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:118:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2673.0 Safari/537.36\";s:5:\"login\";i:1457806831;}}'),
 	(15,1,'wp_user-settings','libraryContent=browse&align=center&editor=tinymce&imgsize=full&hidetb=1'),
 	(16,1,'wp_user-settings-time','1455997413'),
 	(17,1,'wp_dashboard_quick_press_last_post_id','120'),
