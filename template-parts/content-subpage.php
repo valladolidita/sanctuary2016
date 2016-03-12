@@ -18,7 +18,7 @@ get_header(); ?>
 				    <ul id="selected-image">
 				        <?php foreach( $images as $image ): ?>
 				            <li>
-				                <a href="<?php echo $image['url']; ?>">
+				                <a data-img="<?php echo $image['alt']; ?>" href="<?php echo $image['url']; ?>" class="galleryHide">
 				                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 				                </a>
 				            </li>
@@ -28,7 +28,7 @@ get_header(); ?>
 				    <ul id="thumbnail-gallery">
 				    <?php foreach( $images as $image ): ?>
 				            <li>
-				                <a href="<?php echo $image['url']; ?>">
+				                <a data-img="<?php echo $image['alt']; ?>">
 				                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 				                </a>
 				            </li>

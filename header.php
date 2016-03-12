@@ -21,8 +21,11 @@
 <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
-
+<?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
+<script type="text/javascript"
+  src="<?php bloginfo("template_url"); ?>/js/script.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>

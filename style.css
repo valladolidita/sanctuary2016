@@ -1415,3 +1415,8 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+.galleryHide {
+ display: none;
+ visibility: hidden;
+}
