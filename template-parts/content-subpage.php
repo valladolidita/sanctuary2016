@@ -82,7 +82,7 @@ endif;
 
 ?>	
 </div>
-	<div id="image-content6" style="background-image: url('<?php the_field('background_image'); ?>');"></div>
+	<div class="backgroundwidth" id="image-content6" style="background-image: url('<?php the_field('background_image'); ?>');"></div>
 </div>
 
 	<footer id="colophon-subpage" class="site-footer" role="contentinfo">
