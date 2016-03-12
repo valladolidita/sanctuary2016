@@ -21,6 +21,16 @@
 <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+	$(function () {
+		$('nav li ul').hide().removeClass('fallback');
+		$('nav li').hover(function () {
+			$('ul', this).stop().slideToggle(200);
+		});
+	});
+	</script>
+
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
 <script type="text/javascript"

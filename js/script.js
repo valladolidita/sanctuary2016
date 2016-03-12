@@ -34,10 +34,3 @@ jQuery(document).ready(function( $ ) {
 });
 
 
-
-
-
-
-
-
-
